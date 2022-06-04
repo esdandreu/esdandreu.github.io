@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300&display=swap');
+
+/* Mobile First */
+
+/* Whole page */
+.experience-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none currentColor solid;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
+    color: #3a3f43;
+    text-align: center;
+}
+h2, a:visited, a:link{
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 10px;
+    color:#0C4876;
+}
+a:hover{
+    color:#01070B;
+}
+h3 {
+    color: #031523;
+}
+h4 {
+    color: #005655;
+    font-family: 'Rubik', sans-serif;
+}
+hr {
+    margin: 0;
+}
+/* Experience */
+.experience-image {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.experience-image img {
+    max-height: 200px;
+    max-width: 100%;
+}
+.experience_container-title {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.experience-title {
+    display: inline-block;
+    text-align: left;
+}
+.experience-content {
+    display: block;
+}
+.experience-content p {
+    text-align: justify;
+}
+/* Portfolio */
+.project {
+    display: grid;
+    grid-template-columns: 100%
+}
+.project-image {
+    /* margin-top: 5vh; */
+    grid-column: 1 / 2;
+    align-self: center;
+    text-align: center;
+}
+.project-image img {
+    width: auto;
+    max-height: 400px;
+    max-width: 100%; 
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+.project_container {
+    grid-column: 1 / 2;
+    width: 100%;
+    text-align: center;
+}
+.project-title_container {
+    display: inline-block;
+    text-align: left;
+}
+.project-content {
+    display: block;
+}
+.project-description {
+    text-align: justify;
+}
+@media only screen and (min-width: 745px) {
+    /* Desktop Version */
+    .experience-image {
+        display: inline-block;
+        width: 30%;
+    }
+    .experience-image img {
+        width: 100%;
+    }
+    .experience_container-title {
+        width: 70%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .project {
+        grid-template-columns: 40% 60%;
+    }
+    .project_container {
+        grid-column: 2 / 3;
+        margin-left: 5%;
+    }
+}
+
+  
+@media only screen and (min-width: 1000px) {
+    /* Big screen */
+    
+}
+

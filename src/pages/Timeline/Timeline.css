@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+#education-title h1, #qualifications-title h1 {
+    font-size: 18px;
+}
+
+.timeline-container {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    width: 95%;
+    overflow: hidden;
+}
+
+h3, h4, h5, p {
+    padding-left: 2.5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: stretch;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 0 2%;
+    padding: 0 2% 0 2%
+}
+
+#education-grid {
+    grid-template-columns: 40px 1fr;
+    transition: all 1s;
+}
+
+#qualifications-grid {
+    grid-template-columns: 40px 1fr;
+    transition: all 1s;
+}
+
+#education-title, #qualifications-title {
+    grid-column: 1 / 3;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.education_items{
+    grid-column: 1 / 3;
+    margin-top: 5%;
+    background-color: white;
+    z-index: 0;
+    width: 50%;
+    opacity: 1;
+    transition: all 1s;
+    border: 2px solid #40275979;
+}
+
+#timeline_education-highschool {
+    justify-self: start;
+}
+
+#timeline_education-valencia {
+    justify-self: start;
+}
+
+#timeline_education-exchangeUSA {
+    justify-self: end;
+}
+
+#timeline_education-stadler {
+    border: 2px solid #3333ff85;
+    justify-self: end;
+}
+#timeline_education-exchangeAMS {
+    justify-self: end;
+}
+
+#timeline_education-prontopro {
+    border: 2px solid #3333ff85;
+    justify-self: end;
+}
+
+#qualifications-title {
+    grid-row: var(--educationEnd);
+}
+
+.timeline-year{
+    grid-column: 1 / 2 ;
+    grid-row: span 2;
+    border-left: 2px solid black;
+    text-align: center;
+    color: #592740;
+}
+
+.timeline_qualifications-container{
+    grid-column: 2 / 3 ;
+    padding-right: 1%;
+    grid-row: span 2;
+}
+
+.timeline_qualifications-container p{
+    text-align: justify;
+    margin-top: 0;
+}
+@media only screen and (min-width: 500px) {
+    /* Desktop Version */
+    #education-title {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+
+    #qualifications-title {
+        grid-row: 1 / 2;
+        grid-column: 2 / 4;
+    }
+
+    .timeline-container {
+        margin: 5%;
+        width: 90%;
+    }
+    #education-grid {
+        margin-left: 0%;
+        margin-right: 0%;
+        grid-template-columns: 45fr 40px 35fr;
+        grid-gap: 0px 5px;
+    }
+    #qualifications-grid {
+        margin-left: 0%;
+        margin-right: 0%;
+        grid-template-columns: 35fr 40px 45fr;
+        grid-gap: 0px 5px;
+    }
+
+    .education_items {
+        grid-column: 1 / 2;
+        margin-top: 1vh;
+    }
+
+    #qualifications-title {
+        grid-column: 2 / 4
+    }
+
+    .timeline-year{
+        grid-column: 2 / 3 ;
+    }
+    
+    .timeline_qualifications-container{
+        grid-column: 3 / 4 ;
+    }
+
+    .qualifications-education_items {
+        width: 50%;
+    }
+}
+
+  
+/* @media only screen and (min-width: 1000px) {
+} */

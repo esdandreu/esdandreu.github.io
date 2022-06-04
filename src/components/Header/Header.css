@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+:root{
+    --header_link_color-home: #468646;
+    --header_link_color-experience: #4669d3;
+    --header_link_color-timeline: #894ab5;
+}
+
+.header__container {
+    position: relative;
+    width: 100%;
+}
+
+.header__bio {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.header__navbar, .header__bio {
+    background-color: #ffffffd2;
+    z-index: 1;
+}
+
+.header__navbar {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid;
+    margin-top: 20px;
+}
+
+.header__navbar h3 {
+    text-align: center;
+    display: inline-block;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.header__navbar a{
+    text-decoration: none currentColor solid;
+}
+.header__link-home a:visited, .header__link-home a:link {
+    color: var(--header_link_color-home);
+}
+.header__link-experience a:visited, .header__link-experience a:link {
+    color: var(--header_link_color-experience);
+}
+.header__link-timeline a:visited, .header__link-timeline a:link {
+    color: var(--header_link_color-timeline);
+}
+
+.header__navbar a:hover{
+    color:black;
+}
+
+#header_link-skills, #header_link-portfolio, #header_link-qualifications{
+    display: none;
+}
+
+@media only screen and (min-width: 745px) {
+    /* Desktop Version */
+    
+    .header__navbar h3 {
+        font-size: 2vw;
+        padding: 10px 3vw;
+    }
+    #header_link-skills, #header_link-portfolio, #header_link-qualifications{
+        display: inline-block;
+    }
+}
+
+  
+@media only screen and (min-width: 1000px) {
+    /* Big screen */
+    
+    .header__navbar h3 {
+        font-size: 20px;
+        padding: 10px 3vw;
+    }
+}

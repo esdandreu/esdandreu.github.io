@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.home_container {
+    padding: 5vw;
+    font-family: 'Poppins', sans-serif;
+}
+.home_container h1 {
+    text-align: center;
+    color: #23422a;
+}
+.home_container p {
+    text-align: justify;
+}
+.home_element-container {
+    text-align: center;
+}
+.home_element-set {
+    display: inline;
+    text-align: left;
+    /* vertical-align: middle; */
+    vertical-align: top;
+}
+.home_element-set h3 {
+    text-align: center;
+}
+
+#objective {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-flow: dense;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.image-container {
+    text-align: center;
+    align-self: center;
+    grid-row: span 2;
+    grid-column: 1;
+}
+
+.skills_title-container {
+    grid-column: 1;
+}
+
+img {
+    width: auto;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+    /* Desktop Version */
+    .home_element-set {
+        display: inline-block;
+        padding: 0.5vw;
+    }
+    #objective {
+        grid-template-columns: 85% 15%;
+    }
+    #skills {
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    #skills-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #skill-two-row-span {
+        grid-row: 2 span;
+    }
+
+    #skills-data .home_element-set{
+        display: inline-block;
+        /* display: grid;
+        grid-template-columns: 33% 33% 33%; */
+    }
+
+    #objective .image-container {
+        grid-column: 2;
+    }
+
+    #skills .image-container {
+        grid-column: 1;
+    }
+    #skills .title-container {
+        grid-column: 2;
+    }
+    img {
+        width: auto;
+        max-height: 100%;
+        max-width: 90%;
+    }
+}
+
+  
+@media only screen and (min-width: 1000px) {
+    /* Big screen */
+    .home_element-set {
+        display: inline-block;
+        padding: 1vw;
+    }
+    #skills {
+        grid-template-columns: 1fr 4fr;
+        padding: 0;
+    }
+}
