@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c2ebd22.css",
-    "main.js": "/static/js/main.18447415.js",
+    "main.css": "/static/css/main.1041cd43.css",
+    "main.js": "/static/js/main.711fce0b.js",
     "static/media/DBF.jpg": "/static/media/DBF.5107f24765cb315f3bbb.jpg",
     "static/media/strengths.jpg": "/static/media/strengths.10ef8cc5f3584995bb22.jpg",
     "static/media/KinectRobot.jpg": "/static/media/KinectRobot.cbd1255b725729dfb54c.jpg",
     "static/media/WakePi.jpg": "/static/media/WakePi.c74db16cd8f310f0382b.jpg",
     "static/media/Eogu.jpg": "/static/media/Eogu.2b4e6755978f2c0e341b.jpg",
     "static/media/skills.jpg": "/static/media/skills.6b71040b8cc23e33707b.jpg",
-    "static/media/github.png": "/static/media/github.ab6987430fdb8a83acca.png",
     "static/media/project-web.png": "/static/media/project-web.f661b795bb8aeac4a5fb.png",
     "static/media/Stadler.jpg": "/static/media/Stadler.edf4cc7378e009932e65.jpg",
-    "static/media/email.png": "/static/media/email.c3bc353f5b21f15ab0cb.png",
-    "static/media/linkedin.png": "/static/media/linkedin.e033da14b581b7cbb0f0.png",
     "static/media/languages.png": "/static/media/languages.f1519c2a79db4fd4b83e.png",
     "static/media/objective.png": "/static/media/objective.4aae05ddb6d2b3cc57e3.png",
     "index.html": "/index.html",
-    "main.6c2ebd22.css.map": "/static/css/main.6c2ebd22.css.map",
-    "main.18447415.js.map": "/static/js/main.18447415.js.map"
+    "main.1041cd43.css.map": "/static/css/main.1041cd43.css.map",
+    "main.711fce0b.js.map": "/static/js/main.711fce0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c2ebd22.css",
-    "static/js/main.18447415.js"
+    "static/css/main.1041cd43.css",
+    "static/js/main.711fce0b.js"
   ]
 }
