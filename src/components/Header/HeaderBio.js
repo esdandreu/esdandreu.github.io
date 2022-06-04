@@ -9,7 +9,7 @@ import pic_3 from "../../images/profile-bike.jpg";
 import pic_4 from "../../images/profile-NY.jpg";
 import pic_5 from "../../images/profile-radio.jpg";
 
-// import email_logo from "../../images/email.png";
+import email_logo from "../../images/email.png";
 import linkedin_logo from "../../images/linkedin.png";
 import github_logo from "../../images/github.png";
 import curriculum_logo from "../../images/curriculum.png";
@@ -68,13 +68,13 @@ class HeaderBio extends Component {
         <div className="bio_info-container">
           <div className="bio_info">
             <h1>Andreu Giménez Bolinches</h1>
-            {/* <a
+            <a
               href="mailto:esdandreu@gmail.com"
               rel="noopener noreferrer"
               target="_blank"
             >
               <img className="logo" src={email_logo} alt="email" />
-            </a> */}
+            </a>
             <a
               href="https://www.linkedin.com/in/andreu-gimenez-bolinches-esdandreu/"
               rel="noopener noreferrer"
