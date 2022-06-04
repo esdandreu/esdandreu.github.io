@@ -1,15 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.7557e126.css",
-    "main.js": "/static/js/main.fd65e9bc.js",
-    "static/media/profile-bike.jpg": "/static/media/profile-bike.618e09bc0b062b0f590b.jpg",
-    "static/media/profile-graduate.jpg": "/static/media/profile-graduate.a69dac4bb1f3dc928d40.jpg",
-    "static/media/profile-NY.jpg": "/static/media/profile-NY.b6c16b43317b0e1a00bb.jpg",
+    "main.css": "/static/css/main.6c2ebd22.css",
+    "main.js": "/static/js/main.18447415.js",
     "static/media/DBF.jpg": "/static/media/DBF.5107f24765cb315f3bbb.jpg",
-    "static/media/profile-radio.jpg": "/static/media/profile-radio.3360fd7ab364c595b4c9.jpg",
     "static/media/strengths.jpg": "/static/media/strengths.10ef8cc5f3584995bb22.jpg",
     "static/media/KinectRobot.jpg": "/static/media/KinectRobot.cbd1255b725729dfb54c.jpg",
-    "static/media/profile-pic.jpg": "/static/media/profile-pic.9e9e68ec6aa5c29971e0.jpg",
     "static/media/WakePi.jpg": "/static/media/WakePi.c74db16cd8f310f0382b.jpg",
     "static/media/Eogu.jpg": "/static/media/Eogu.2b4e6755978f2c0e341b.jpg",
     "static/media/skills.jpg": "/static/media/skills.6b71040b8cc23e33707b.jpg",
@@ -21,11 +16,11 @@
     "static/media/languages.png": "/static/media/languages.f1519c2a79db4fd4b83e.png",
     "static/media/objective.png": "/static/media/objective.4aae05ddb6d2b3cc57e3.png",
     "index.html": "/index.html",
-    "main.7557e126.css.map": "/static/css/main.7557e126.css.map",
-    "main.fd65e9bc.js.map": "/static/js/main.fd65e9bc.js.map"
+    "main.6c2ebd22.css.map": "/static/css/main.6c2ebd22.css.map",
+    "main.18447415.js.map": "/static/js/main.18447415.js.map"
   },
   "entrypoints": [
-    "static/css/main.7557e126.css",
-    "static/js/main.fd65e9bc.js"
+    "static/css/main.6c2ebd22.css",
+    "static/js/main.18447415.js"
   ]
 }
