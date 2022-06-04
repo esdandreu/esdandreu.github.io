@@ -14,6 +14,24 @@ import Timeline from "./pages/Timeline";
 
 import * as serviceWorker from "./utils/serviceWorker";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope, faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedinIn,
+  faStackOverflow,
+  faGithub,
+  faGitlab,
+} from "@fortawesome/free-brands-svg-icons";
+
+library.add(
+  faEnvelope,
+  faFileAlt,
+  faLinkedinIn,
+  faStackOverflow,
+  faGithub,
+  faGitlab
+);
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={createBrowserHistory()}>

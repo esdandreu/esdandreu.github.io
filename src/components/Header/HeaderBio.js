@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 import "./HeaderBio.css";
 import { withRouter } from "react-router-dom";
-import Img from "react-image";
 
-import pic_1 from "../../images/profile-graduate.jpg";
-import pic_2 from "../../images/profile-pic.jpg";
-import pic_3 from "../../images/profile-bike.jpg";
-import pic_4 from "../../images/profile-NY.jpg";
-import pic_5 from "../../images/profile-radio.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import email_logo from "../../images/email.png";
-import linkedin_logo from "../../images/linkedin.png";
-import github_logo from "../../images/github.png";
-import curriculum_logo from "../../images/curriculum.png";
+// Hardcoded from
+const IMG_FILENAMES = ["bike", "graduate", "NY", "prize", "radio"];
 
-const IMGS = [pic_1, pic_2, pic_3, pic_4, pic_5];
+function IconLink(props) {
+  return (
+    <a href={props.href} rel="noopener noreferrer" target="_blank">
+      <FontAwesomeIcon className="icon" icon={props.icon} />
+    </a>
+  );
+}
 
 class HeaderBio extends Component {
   constructor(props) {
@@ -39,7 +38,7 @@ class HeaderBio extends Component {
 
   animateImages = () => {
     this.imgInterval = setInterval(() => {
-      const imgIndex = (this.state.imgIndex + 1) % IMGS.length;
+      const imgIndex = (this.state.imgIndex + 1) % IMG_FILENAMES.length;
       this.setState({ imgIndex, fadeIn: true }, () => {
         this.timeout = setTimeout(
           () => this.setState({ fadeIn: false }),
@@ -53,49 +52,60 @@ class HeaderBio extends Component {
     const { fadeIn, imgIndex } = this.state;
     return (
       <div className="bio_container" id="header_bio">
-        {/* <div className="bio_pic" id={fadeIn ? "img-fade-in" : "img-fade-out"}>
-          <Img
+        <div className="bio_pic" id={fadeIn ? "img-fade-in" : "img-fade-out"}>
+          {/* Keep two images loaded in order to improve stability*/}
+          <img
             style={imgIndex % 2 ? { display: "none" } : {}}
-            src={[IMGS[2 * Math.ceil(imgIndex / 2)], pic_1]}
+            src={
+              process.env.PUBLIC_URL +
+              `/profile/${
+                IMG_FILENAMES[
+                  (imgIndex + (imgIndex % 2)) % IMG_FILENAMES.length
+                ]
+              }.jpg`
+            }
             alt="profile"
           />
-          <Img
+          <img
             style={imgIndex % 2 ? {} : { display: "none" }}
-            src={[IMGS[2 * Math.floor(imgIndex / 2) + 1], pic_1]}
+            src={
+              process.env.PUBLIC_URL +
+              `/profile/${
+                IMG_FILENAMES[
+                  (imgIndex - (imgIndex % 2) + 1) % IMG_FILENAMES.length
+                ]
+              }.jpg`
+            }
             alt="profile"
           />
-        </div> */}
+        </div>
         <div className="bio_info-container">
           <div className="bio_info">
             <h1>Andreu Giménez Bolinches</h1>
-            <a
+            <IconLink
               href="mailto:esdandreu@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img className="logo" src={email_logo} alt="email" />
-            </a>
-            <a
+              icon="fas fa-envelope"
+            />
+            <IconLink
               href="https://www.linkedin.com/in/andreu-gimenez-bolinches-esdandreu/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img className="logo" src={linkedin_logo} alt="linkedin" />
-            </a>
-            <a
-              href="https://github.com/esdandreu"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img className="logo" src={github_logo} alt="github" />
-            </a>
-            <a
+              icon="fab fa-linkedin-in"
+            />
+            <IconLink
               href="https://raw.githubusercontent.com/esdandreu/esdandreu/main/cv/andreu-gimenez-bolinches.pdf"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <img className="logo" src={curriculum_logo} alt="CV" />
-            </a>
+              icon="fas fa-file-alt"
+            />
+            <IconLink
+              href="https://stackoverflow.com/users/13180090/andreu-gimenez"
+              icon="fab fa-stackoverflow"
+            />
+            <IconLink
+              href="https://github.com/esdandreu"
+              icon="fab fa-github"
+            />
+            <IconLink
+              href="https://gitlab.com/esdandreu"
+              icon="fab fa-gitlab"
+            />
             <h3>Aerospace Engineer | Programmer | Maker</h3>
             <p>
               Self-learning skills and limited time problem solving; High
