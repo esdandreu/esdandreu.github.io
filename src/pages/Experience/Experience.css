@@ -40,31 +40,6 @@ h4 {
 hr {
     margin: 0;
 }
-/* Experience */
-.experience-image {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-.experience-image img {
-    max-height: 200px;
-    max-width: 100%;
-}
-.experience_container-title {
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-.experience-title {
-    display: inline-block;
-    text-align: left;
-}
-.experience-content {
-    display: block;
-}
-.experience-content p {
-    text-align: justify;
-}
 /* Portfolio */
 .project {
     display: grid;

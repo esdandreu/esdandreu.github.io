@@ -82,11 +82,6 @@ class Header extends Component  {
                             Skills
                         </NavLink>
                     </h3>
-                    <h3 className = "header__link-experience" id="header_link-experience">
-                        <NavLink scroll={el => this.scrollWithOffset(el, this.navbar_height)} to='/experience#experience'>
-                            Experience
-                        </NavLink>
-                    </h3>
                     <h3 className = "header__link-experience" id="header_link-portfolio">
                         <NavLink scroll={el => this.scrollWithOffset(el, this.navbar_height)} to='/experience#portfolio'>
                         Portfolio

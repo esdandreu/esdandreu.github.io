@@ -103,7 +103,7 @@ class HeaderBio extends Component {
               href="https://gitlab.com/esdandreu"
               icon="fab fa-gitlab"
             />
-            <h3>Aerospace Engineer | Programmer | Maker</h3>
+            <h3>Aerospace | Robotics | Maker</h3>
             <p>
               Self-learning skills and limited time problem solving; High
               English level; Team management and social skills; Quick adaptation
