@@ -1,19 +1,10 @@
 import React, { Component } from "react";
 import "./HeaderBio.css";
+import IconLink from "../IconLink";
 import { withRouter } from "react-router-dom";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Hardcoded from
 const IMG_FILENAMES = ["bike", "graduate", "NY", "prize", "radio"];
-
-function IconLink(props) {
-  return (
-    <a href={props.href} rel="noopener noreferrer" target="_blank">
-      <FontAwesomeIcon className="icon" icon={props.icon} />
-    </a>
-  );
-}
 
 class HeaderBio extends Component {
   constructor(props) {
@@ -83,26 +74,32 @@ class HeaderBio extends Component {
           <div className="bio_info">
             <h1>Andreu Giménez Bolinches</h1>
             <IconLink
+              className="header-icon"
               href="mailto:esdandreu@gmail.com"
               icon="fas fa-envelope"
             />
             <IconLink
+              className="header-icon"
               href="https://www.linkedin.com/in/andreu-gimenez-bolinches-esdandreu/"
               icon="fab fa-linkedin-in"
             />
             <IconLink
+              className="header-icon"
               href="https://raw.githubusercontent.com/esdandreu/esdandreu/main/cv/andreu-gimenez-bolinches.pdf"
               icon="fas fa-file-alt"
             />
             <IconLink
+              className="header-icon"
               href="https://stackoverflow.com/users/13180090/andreu-gimenez"
-              icon="fab fa-stackoverflow"
+              icon="fab fa-stack-overflow"
             />
             <IconLink
+              className="header-icon"
               href="https://github.com/esdandreu"
               icon="fab fa-github"
             />
             <IconLink
+              className="header-icon"
               href="https://gitlab.com/esdandreu"
               icon="fab fa-gitlab"
             />

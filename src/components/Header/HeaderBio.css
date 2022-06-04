@@ -74,8 +74,8 @@
     margin-right:10%;
 }
 
-.icon {
-    font-size: 3em;
+.header-icon {
+    font-size: min(max(5vw, 4vh), 35px);
     margin-top: 1vh;
     margin-bottom: 1vh;
     margin-left: 2vw;

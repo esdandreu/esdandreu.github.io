@@ -23,18 +23,19 @@
     vertical-align: middle;
     padding:2vw;
 }
-.footer_logo {
-    width: 8vw;
+
+.footer-icon {
+    font-size: 2em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     margin-left: 1vw;
     margin-right: 1vw;
-    margin-bottom: 2vw;
-    max-width: 40px;
 }
 
-@media only screen and (min-width: 745px) {
+@media only screen and (min-width: 1000px) {
     /* Desktop Version */
     .footer-container{
-        width: 60%;
+        width: 80%;
         margin-left: 20%;
     }
     .footer_social-container, .footer_quote-container {
@@ -42,11 +43,3 @@
     }
 }
 
-  
-@media only screen and (min-width: 1000px) {
-    /* Big screen */
-    .footer-container{
-        width: 50%;
-        margin-left: 30%;
-    }
-}
