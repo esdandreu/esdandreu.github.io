@@ -80,7 +80,7 @@ class HeaderBio extends Component {
             />
             <IconLink
               className="header-icon"
-              href="https://www.linkedin.com/in/andreu-gimenez-bolinches-esdandreu/"
+              href="https://www.linkedin.com/in/andreu-gimenez/"
               icon="fab fa-linkedin-in"
             />
             <IconLink
