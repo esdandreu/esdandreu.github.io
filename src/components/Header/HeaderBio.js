@@ -17,7 +17,7 @@ class HeaderBio extends Component {
   componentDidMount() {
     this.timeout = setTimeout(
       () => this.setState({ fadeIn: false }),
-      this.image_duration - this.fade_duration
+      this.image_duration - this.fade_duration,
     );
     this.animateImages();
   }
@@ -33,7 +33,7 @@ class HeaderBio extends Component {
       this.setState({ imgIndex, fadeIn: true }, () => {
         this.timeout = setTimeout(
           () => this.setState({ fadeIn: false }),
-          this.image_duration - this.fade_duration
+          this.image_duration - this.fade_duration,
         );
       });
     }, this.image_duration);
