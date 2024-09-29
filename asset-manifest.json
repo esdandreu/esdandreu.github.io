@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cf87a356.css",
-    "main.js": "/static/js/main.92e70826.js",
+    "main.js": "/static/js/main.bf2db407.js",
     "static/media/DBF.jpg": "/static/media/DBF.5107f24765cb315f3bbb.jpg",
     "static/media/strengths.jpg": "/static/media/strengths.10ef8cc5f3584995bb22.jpg",
     "static/media/KinectRobot.jpg": "/static/media/KinectRobot.cbd1255b725729dfb54c.jpg",
@@ -13,10 +13,10 @@
     "static/media/objective.png": "/static/media/objective.4aae05ddb6d2b3cc57e3.png",
     "index.html": "/index.html",
     "main.cf87a356.css.map": "/static/css/main.cf87a356.css.map",
-    "main.92e70826.js.map": "/static/js/main.92e70826.js.map"
+    "main.bf2db407.js.map": "/static/js/main.bf2db407.js.map"
   },
   "entrypoints": [
     "static/css/main.cf87a356.css",
-    "static/js/main.92e70826.js"
+    "static/js/main.bf2db407.js"
   ]
 }
