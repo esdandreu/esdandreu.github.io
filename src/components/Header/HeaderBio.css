@@ -1,144 +1,155 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 /* Mobile First */
 .bio_container {
-    width: 100%;
+  width: 100%;
 }
 
 .bio_pic {
-    width: 100%;
-    float: center;
-    /* background-color: red */
+  width: 100%;
+  float: center;
+  /* background-color: red */
 }
 
 .bio_pic img {
-    object-fit: contain;
-    border: 5px solid rgba(53, 53, 53, 0.404);
-    border-radius: 50%;
-    text-align: center;
-    margin-top: 20px;
-    float: center;
+  object-fit: contain;
+  border: 5px solid rgba(53, 53, 53, 0.404);
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
+  float: center;
 }
 
 #img-fade-out {
-    opacity: 0;
-    animation-name: fade-out;
-    animation-duration: 0.5s;
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 0.5s;
 }
 
 #img-fade-in {
-    opacity: 100;
-    animation-name: fade-in;
-    animation-duration: 0.5s;
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
 }
 
 @keyframes fade-out {
-    from {opacity: 100}
-    to {opacity: 0}
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-    from {opacity: 0}
-    to {opacity: 100}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
 
 .bio_info-container {
-    width: 100%;
-    display: inline-block;
+  width: 100%;
+  display: inline-block;
 }
 
-.bio_info h1, .bio_info h3, .bio_info p{
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
+.bio_info h1,
+.bio_info h3,
+.bio_info p {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
-.bio_info p{
-    text-align: justify;
-    font-family: 'Poppins', sans-serif;
+.bio_info p {
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
 }
 
-.bio_info h1, .bio_info h3 {
-    font-size: 6vw;
-    font-family: 'inconsolata', monospace;
+.bio_info h1,
+.bio_info h3 {
+  font-size: 6vw;
+  font-family: "inconsolata", monospace;
 }
 
 .bio_info h1 {
-    font-size: 7vw;
+  font-size: 7vw;
 }
 
 .bio_info h3 {
-    font-size: 6vw;
-    margin-left:10%;
-    margin-right:10%;
+  font-size: 6vw;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .header-icon {
-    font-size: min(max(5vw, 4vh), 35px);
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
+  font-size: min(max(5vw, 4vh), 35px);
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
-a:hover, a:active, a:focus {
-    outline: none;
-    border: 0;
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+  border: 0;
 }
 
 @media only screen and (min-width: 745px) {
-    /* Desktop Version */
-    .bio_container {
-        height: 70vw;
-        max-height: 400px
-    }
-    .bio_pic {
-        width: 50%;
-        height:100%;
-        float: left;
-        vertical-align: middle;
-    }
+  /* Desktop Version */
+  .bio_container {
+    height: 70vw;
+    max-height: 400px;
+  }
+  .bio_pic {
+    width: 50%;
+    height: 100%;
+    float: left;
+    vertical-align: middle;
+  }
 
-    .bio_pic img {
-        height: 90%;
-        width: auto;
-    }
-    
-    .bio_info-container {
-        width: 45%;
-        height: 100%;
-        float: right;
-        display: table;
-        margin-right: 5%;
-    }
+  .bio_pic img {
+    height: 90%;
+    width: auto;
+  }
 
-    .bio_info {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-    }
-    
-    .bio_info h1 {
-        font-size: 3.3vw;
-    }
+  .bio_info-container {
+    width: 45%;
+    height: 100%;
+    float: right;
+    display: table;
+    margin-right: 5%;
+  }
 
-    .bio_info h3 {
-        font-size: 2.6vw;
-        margin:auto;
-    }
-    
+  .bio_info {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .bio_info h1 {
+    font-size: 3.3vw;
+  }
+
+  .bio_info h3 {
+    font-size: 2.6vw;
+    margin: auto;
+  }
 }
 
-  
 @media only screen and (min-width: 1000px) {
-    /* Big screen */
-    
-    .bio_info h1 {
-        font-size: 2.8vw;
-    }
-    .bio_info h3 {
-        font-size: 2.05vw;
-        margin:auto;
-    }
+  /* Big screen */
+
+  .bio_info h1 {
+    font-size: 2.8vw;
+  }
+  .bio_info h3 {
+    font-size: 2.05vw;
+    margin: auto;
+  }
 }

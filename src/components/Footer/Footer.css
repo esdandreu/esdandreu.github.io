@@ -1,50 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-.footer{
-    display: block;
-    padding-top:20px;
-    background-color: rgba(177, 177, 177, 0.514);
-    text-align: center;
+.footer {
+  display: block;
+  padding-top: 20px;
+  background-color: rgba(177, 177, 177, 0.514);
+  text-align: center;
 }
 
-.footer p{
-    padding: 0;
-    margin: 0;
+.footer p {
+  padding: 0;
+  margin: 0;
 }
 
-.footer-container{
-    width: 100%;
-    display: table;
-    font-family: 'Poppins', sans-serif;
+.footer-container {
+  width: 100%;
+  display: table;
+  font-family: "Poppins", sans-serif;
 }
-.footer_social-container, .footer_quote-container {
-    width: 50%;
-    display: table-cell;
-    vertical-align: middle;
-    padding:2vw;
+.footer_social-container,
+.footer_quote-container {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2vw;
 }
 
 .footer-icon {
-    font-size: 2em;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+  font-size: 2em;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
-a:hover, a:active, a:focus {
-    outline: none;
-    border: 0;
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+  border: 0;
 }
 
 @media only screen and (min-width: 1000px) {
-    /* Desktop Version */
-    .footer-container{
-        width: 80%;
-        margin-left: 10%;
-    }
-    .footer_social-container, .footer_quote-container {
-        padding:20px;
-    }
+  /* Desktop Version */
+  .footer-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .footer_social-container,
+  .footer_quote-container {
+    padding: 20px;
+  }
 }
-
